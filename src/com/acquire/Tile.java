@@ -10,12 +10,14 @@ public class Tile {
     }
 
     public boolean isSameValue(Tile tile){
+        return this.value.equals(tile.value);
+    }
 
-        return this.value == tile.value;
+    public String getValue() {
+        return value;
     }
 
     public boolean isNeighbour(Tile tileToCheck){
-
         return this.position.isNeigbouringPosition(tileToCheck.position);
     }
 }

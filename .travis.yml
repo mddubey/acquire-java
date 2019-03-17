@@ -1,10 +1,10 @@
 language: java
 
 install:
-  - TERM=dumb ./gradle -q assemble
+  - TERM=dumb ./gradlew -q assemble
 
 script:
-  - TERM=dumb ./gradle check
+  - TERM=dumb ./gradlew check
 
 jdk:
   - oraclejdk11
